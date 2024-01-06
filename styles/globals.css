@@ -1,5 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&family=Poppins:wght@200;300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&family=Poppins:wght@200;300;400;500;600&display=swap");
+/* @import 'tsparticles/dist/tsparticles.css'; */
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+@layer components {
+  .nav-link {
+    @apply relative font-semibold cursor-pointer w-fit  md:block  after:block after:content-[''] after:absolute after:h-[3px] after:bg-light-green-800 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center hidden;
+  }
+}
+
