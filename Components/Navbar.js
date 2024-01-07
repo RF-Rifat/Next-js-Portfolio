@@ -81,11 +81,11 @@ const Navbar = () => {
       <nav
         className={`${
           styles.paddingX
-        } w-full flex items-center py-5 fixed top-0 z-50 ${
+        } w-full flex items-center py-5 absolute max-w-7xl mx-auto top-0 z-50 ${
           scrolled ? "bg-primary" : "bg-transparent"
         }`}
       >
-        <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
+        <div className="w-full flex justify-between items-center">
           <Link
             href={"/"}
             className="flex items-center gap-2"
@@ -107,13 +107,13 @@ const Navbar = () => {
             </p>
           </Link>
 
-          <ul className="list-none hidden md:flex flex-row gap-10">
+          <ul className="list-none hidden lg:flex flex-row gap-10">
             {navLinks.map((nav) => (
               <li
                 key={nav.id}
                 className={`${
                   active === nav.id ? "text-white" : "text-secondary"
-                } hover:text-orange-400 text-[18px] font-medium cursor-pointer nav-link text-white`}
+                } active:text-orange-400 text-[20px] font-medium cursor-pointer nav-link text-white`}
               >
                 <a href={`#${nav.id}`}>{nav.title}</a>
               </li>
@@ -121,10 +121,10 @@ const Navbar = () => {
           </ul>
 
           <div
-            className="text-white md:hidden flex flex-1 justify-end items-center"
+            className="text-white lg:hidden flex flex-1 justify-end items-center"
             onClick={() => setToggle(!toggle)}
           >
-            <div className="text-xl">{toggle ? <AiOutlineClose /> : <RiMenu3Fill />}</div>
+            <div className="text-2xl">{toggle ? <AiOutlineClose /> : <RiMenu3Fill />}</div>
             <AnimatePresence>
               {toggle && (
                 <motion.div
@@ -137,7 +137,7 @@ const Navbar = () => {
                     {navLinks.map((nav, index) => (
                       <motion.li
                         key={nav.id}
-                        className={`font-poppins font-medium cursor-pointer text-[16px] ${
+                        className={`font-poppins font-medium cursor-pointer text-[18px] ${
                           active === nav.id
                             ? "text-white nav-link"
                             : "text-secondary"
@@ -150,7 +150,7 @@ const Navbar = () => {
                         exit={{ opacity: 0, y: -10 }}
                         transition={{ delay: index * 0.1 }}
                       >
-                        <a href={`#${nav.id}`}>{nav.title}</a>
+                        <Link href={`#${nav.id}`}>{nav.title}</Link>
                       </motion.li>
                     ))}
                   </ul>
