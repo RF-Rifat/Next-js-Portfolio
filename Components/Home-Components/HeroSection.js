@@ -19,7 +19,10 @@ function HeroSection() {
             <Typography variant="h1" color="purple-500" className="leading-tight font-bold text-4xl lg:text-5xl">
               Hi, I&apos;m <span className="text-white">Rifad</span>
             </Typography>
+            <div className="text-3xl">
+
             <TypeWriter className="text-3xl"></TypeWriter>
+            </div>
             <Typography variant="body" color="gray-300" className="mt-4 lg:mt-6 text-base lg:text-lg text-justify">
               I&apos;m a Junior MERN Stack Developer passionate about creating efficient, scalable, and innovative solutions. My journey involves continuous learning and problem-solving, turning ideas into reality with code.
             </Typography>

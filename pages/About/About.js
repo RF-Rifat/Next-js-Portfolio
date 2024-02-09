@@ -33,7 +33,7 @@ const About = () => {
           <h2 className={styles.sectionHeadText}>Overview.</h2>
         </motion.div>
 
-        <motion.p className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]">
+        <motion.p className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] text-white">
           I am a Frontend Developer.I can provide responsive interactive website
           with web animation using React.I also provide clean code and pixel
           perfect design.A responsive design makes your website accessible to

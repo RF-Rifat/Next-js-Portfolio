@@ -9,6 +9,7 @@ function TypeWriter() {
         loop: true,
         deleteSpeed: 50,
       }}
+      style={{ fontSize: "2rem" }}
     />
   );
 }

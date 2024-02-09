@@ -9,13 +9,12 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <>
-      <ParticlesContainer className="-z-20">
-        <div className="max-w-7xl mx-auto">
-          <Nav />
-          <HomeSection />
-          <About></About>
-        </div>
-      </ParticlesContainer>
+      <ParticlesContainer />
+      <div className="max-w-7xl mx-auto mt-14 md:mt-32">
+        <Nav />
+        <HomeSection />
+        <About></About>
+      </div>
     </>
   );
 }
