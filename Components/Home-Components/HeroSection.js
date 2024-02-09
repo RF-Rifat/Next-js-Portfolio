@@ -7,7 +7,7 @@ import { FaDownload, FaEnvelope } from "react-icons/fa";
 
 function HeroSection() {
   return (
-    <header className="text-white p-8 bg-transparent fixed max-w-7xl my-auto top-24 z-30 mx-auto">
+    <header className="text-white p-8 bg-transparent max-w-7xl my-auto top-24 z-30 mx-auto">
       <div className="mx-auto grid lg:grid-cols-2 w-full items-center gap-3">
         <div>
           <div className="absolute w-full inset-y-0 lg:right-0 hidden lg:block">
